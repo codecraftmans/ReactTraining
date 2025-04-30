@@ -8,14 +8,25 @@ html,body{
     height: 100%;
 }
 
+ul,li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
 .container{
     width: 100%;
     max-width: 1200px;
     margin: 0px auto;
 }
 
-.navbarContent{
-    position: fixed;
+.NavbarContentWrapper{
+    /* position: fixed; */
+    width: 100%;
+}
+
+.TopnavbarContent{
    width: 100%;
    background: #f1f1f1;
 
@@ -89,4 +100,19 @@ html,body{
 .wallet-icon,.cart-icon{
    height: 30px;
    
+}
+
+
+
+
+.bottomNavbarContent{
+    width: 100%;
+}
+.bottomNavbarContentWrapper{
+    padding: 10px 2px;
+}
+.bottomNavbarList{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
