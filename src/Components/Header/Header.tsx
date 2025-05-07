@@ -1,6 +1,25 @@
 import React from "react";
 import './index.css'
 const Header = () => {
+    const menudata = [{
+        dis_num: 'Wellnes'
+    },
+    {
+        dis_num: 'Shop'
+    },
+    {
+        dis_num: 'Health & Fitness'
+    },
+    {
+        dis_num: 'Nutrition'
+    },
+    {
+        dis_num: 'Wellness'
+    },
+    {
+        dis_num: 'Blog'
+    }
+    ]
     return (
         <React.Fragment>
 
@@ -22,12 +41,7 @@ const Header = () => {
                             <div className="nav_features">
 
                                 <img className="wallet-icon" src="https://img.icons8.com/ios/50/wallet--v1.png" alt="wallet--v1" />
-
                                 <img className="cart-icon" src="https://img.icons8.com/windows/32/bag-front-view.png" alt="bag-front-view" />
-
-
-
-
                             </div>
                         </div>
 
@@ -37,14 +51,72 @@ const Header = () => {
                     <div className="container">
                         <div className="bottomNavbarContentWrapper">
                             <ul className="bottomNavbarList">
-                                <li className="bottomNavbarListItem">Wellnes</li>
-                                <li className="bottomNavbarListItem">Shop</li>
-                                <li className="bottomNavbarListItem">Health & Fitness</li>
-                                <li className="bottomNavbarListItem">Nutrition</li>
-                                <li className="bottomNavbarListItem">Wellness</li>
-                                <li className="bottomNavbarListItem">Blog</li>
+                                {menudata.map((menu, mi) => {
+                                    return (
+                                        <li key={`lv1 ${mi}`} className={`nav_items`}>
+                                            <div className="menu_name">
+                                                {menu.dis_num}
+                                            </div>
+                                            <div className="nav_itemsChildContainer">
+                                                <div className="childs">
+                                                    <ul className='nav_items_Child'>
+                                                        <li>Daily Essentials</li>
+                                                        <li>Vitamins and Minerals</li>
+                                                        <li>Weight Management</li>
+                                                        <li>Other Supplements</li>
+                                                        <li>Hair</li>
+                                                    </ul>
+                                                </div>
+                                                <div className="childs">
+                                                    <ul className='nav_items_Child'>
+                                                        <li>Daily Essentials</li>
+                                                        <li>Vitamins and Minerals</li>
+                                                        <li>Weight Management</li>
+                                                        <li>Other Supplements</li>
+                                                        <li>Hair</li>
+
+                                                    </ul>
+                                                </div>
+                                                <div className="childs">
+                                                    <ul className='nav_items_Child'>
+                                                        <li>Daily Essentials</li>
+                                                        <li>Vitamins and Minerals</li>
+                                                        <li>Weight Management</li>
+                                                        <li>Other Supplements</li>
+                                                        <li>Hair</li>
+
+                                                    </ul>
+                                                </div>
+                                                <div className="childs">
+                                                    <ul className='nav_items_Child'>
+                                                        <li>Daily Essentials</li>
+                                                        <li>Vitamins and Minerals</li>
+                                                        <li>Weight Management</li>
+                                                        <li>Other Supplements</li>
+                                                        <li>Hair</li>
+
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+
+
+
+
+
+
+
+
+
+                                        </li>
+
+                                    )
+                                })}
+
+
                             </ul>
                         </div>
+
 
                     </div>
                 </div>

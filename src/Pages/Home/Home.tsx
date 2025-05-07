@@ -196,6 +196,17 @@ const HomePageComponent = () => {
                     </div>
 
                 </section>
+                <section className="OffersBannerWrapper">
+                    <div className="offerbannercontainer">
+                        <div className="container">
+                            <div className="banner_img">
+                                <img src="https://img10.hkrtcdn.com/39167/bnr_3916699_o.jpg" alt="" />
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
             </div>
 
         </React.Fragment>
