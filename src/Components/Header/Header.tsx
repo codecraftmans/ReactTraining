@@ -28,6 +28,9 @@ const Header = () => {
                     <div className="container">
                         <div className="content">
                             <div className="logo">
+                                <div className="menuicon">
+                                    <img src="https://img.icons8.com/ios/50/menu--v1.png" alt="icon" />
+                                </div>
                                 <img className="logo_img" src="https://www.pngkey.com/png/detail/520-5208886_healthkart-logo-png.png" alt="Healthkart Logo Png@pngkey.com" />
                             </div>
                             <div className="nav-search">
