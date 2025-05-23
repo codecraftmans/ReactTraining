@@ -1,11 +1,9 @@
-import React from 'react'
-import Header from './Components/Header/Header'
-
+import React from 'react';
+import LayoutComponent from './Components/Layout'
 function App() {
   return (
     <React.Fragment>
-      <Header />
-      
+      <LayoutComponent></LayoutComponent>
     </React.Fragment>
   )
 }
